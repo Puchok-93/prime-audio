@@ -57,7 +57,7 @@ function initBrands() {
     const obBrandList = document.querySelector('.brand-list');
     const sBrandTemplate = ({name, link, backgroundImg, logoImg}) =>
         `
-            <li class="brand" style="background: url(../img/${backgroundImg}) center / cover">
+            <li class="brand" style="background: url(img/${backgroundImg}) center / cover">
                 <a class="brand__link" href="https://drhead.ae/brands/${link}/">
                     <img class="brand-info__img" src="img/${logoImg}" alt="${name}">
                 </a>
