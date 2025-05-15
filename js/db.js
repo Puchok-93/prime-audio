@@ -171,7 +171,7 @@ const brands = [
         name: 'Sieveking Sound',
         link: 'sieveking-sound',
         backgroundImg: 'bg-sieveking-sound.jpg',
-        logoImg: 'logo-.svg'
+        logoImg: 'logo-sieveking-sound.png'
     },
     {
         name: 'Furutech',
@@ -195,7 +195,7 @@ const brands = [
         name: 'ZMF',
         link: 'zmf',
         backgroundImg: 'bg-zmf.jpg',
-        logoImg: 'logo-zmf.svg'
+        logoImg: 'logo-zmf.png'
     },
     {
         name: 'Simpleway Audio',
@@ -213,6 +213,6 @@ const brands = [
         name: 'MoonDrop',
         link: 'moondrop',
         backgroundImg: 'bg-moondrop.jpg',
-        logoImg: 'logo-.svg'
+        logoImg: 'logo-moondrop.png'
     },
 ]
