@@ -57,9 +57,9 @@ function initBrands() {
     const obBrandList = document.querySelector('.brand-list');
     const sBrandTemplate = ({name, link, backgroundImg, logoImg}) =>
         `
-            <li class="brand" style="background: url(img/${backgroundImg}) center / cover">
+            <li class="brand" style="background: url(img/backgrounds/${backgroundImg}) center / cover">
                 <a class="brand__link" href="https://drhead.ae/brands/${link}/">
-                    <img class="brand-info__img" src="img/${logoImg}" alt="${name}">
+                    <img class="brand-info__img" src="img/logos/${logoImg}" alt="${name}">
                 </a>
                 <a class="brand__sub-link" href="https://drhead.ae/brands/${link}">View more</a>
             </li>
@@ -76,7 +76,7 @@ function initBrands() {
 }
 
 function initMobNavigation() {
-    const navigation = document.querySelector('.navigation');
+    const navigation = document.querySelector('.header-content');
     const navigationBtn = document.querySelector('#burger-mob-navigation');
 
     navigationBtn.addEventListener('click', (e) => {
@@ -116,7 +116,7 @@ function init() {
     initMultipleSlider();
     initBrands();
     initSmoothScroll();
-    if(window.innerWidth < 767) {
+    if(window.innerWidth < 1025) {
         initMobNavigation();
     }
 
