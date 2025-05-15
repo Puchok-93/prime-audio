@@ -235,6 +235,9 @@ main {
 }
 
 /* About */
+.about {
+    padding: 100px 0 0;
+}
 
 .about__text {
     max-width: 760px;
@@ -549,7 +552,7 @@ button[type="submit"]:hover {
     .header-content {
         flex-direction: column;
         position: absolute;
-        top: 64px;
+        top: 62px;
         left: 0;
         height: 0;
         z-index: 10;
@@ -662,9 +665,27 @@ button[type="submit"]:hover {
         max-width: 280px;
     }
 
+    .brand-list {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .brand { 
+        height: 160px;
+    }
+
+    .brand-info__img {
+        max-width: 120px;
+        max-height: 100px;
+    }
+
     .brand__sub-link {
-        bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        background-color: transparent;
+        bottom: 8px;
         transform: translateY(0);
+        padding: 0 0 5px;
     }
 
     /* Dealers */
