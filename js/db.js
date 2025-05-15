@@ -54,7 +54,7 @@ const brands = [
         logoImg: 'logo-dutch.png'
     },
     {
-        name: 'ddHiFi',
+        name: 'DDHiFi',
         link: 'ddhifi',
         backgroundImg: 'bg-ddhifi.jpg',
         logoImg: 'logo-ddhifi.png'

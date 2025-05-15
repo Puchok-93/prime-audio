@@ -50,7 +50,6 @@ function initMultipleSlider() {
             }
         })
     }
-    console.log('test')
 }
 
 function initBrands() {
@@ -66,9 +65,14 @@ function initBrands() {
         `
     ;
 
+        function sortByField(fieldName){
+            return (a, b) => a[fieldName] > b[fieldName] ? 1 : -1;
+        }
+
     const render = () => {
         obBrandList.innerHTML = '';
-        const createBrandsString = brands.map(item => sBrandTemplate(item)).join('');
+        let sortBrands = brands.sort(sortByField('name'));
+        const createBrandsString = sortBrands.map(item => sBrandTemplate(item)).join('');
         obBrandList.insertAdjacentHTML('beforeend', createBrandsString);
     }
 
@@ -119,8 +123,6 @@ function init() {
     if(window.innerWidth < 1025) {
         initMobNavigation();
     }
-
-    console.log(brands)
 }
 
 window.addEventListener('DOMContentLoaded', init);
