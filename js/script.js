@@ -116,10 +116,73 @@ function initSmoothScroll() {
     }
 }
 
+function initSendForm() {
+    const form = document.getElementById('feedback-form');
+
+    async function sendForm(e) {
+        e.preventDefault();
+        let formData = new FormData(form);
+        let response = await fetch('form.php', {
+            method: 'POST',
+            body: formData,
+        });
+
+        if(response.ok) {
+            form.reset();
+            initSuccessMsg();
+        }
+    }
+
+    // recaptcha
+    document.getElementById('feedback-form').addEventListener('submit', function (evt) {
+        evt.preventDefault();
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LcKzjQqAAAAADbar3tdu8jrNntDh7XhmTMzn_ap', {action: 'formsend'}).then(function (token) {
+                var el = document.createElement("input");
+                el.type = "hidden";
+                el.name = "token";
+                el.value = token;
+                document.getElementById('feedback-form').appendChild(el);
+                sendForm(evt);
+            });
+        });
+    });
+}
+
+function initSuccessMsg() {
+    const success = document.querySelector('.success');
+    const successMessage = document.querySelector('.success__message');
+    const successCloseBtn = document.querySelector('.success__close-btn');
+
+    function openSuccessMsg() {
+        success.classList.add('fadeIn');
+        successMessage.classList.add('slideInDown');
+        success.classList.remove('fadeOut');
+        successMessage.classList.remove('slideOutUp');
+    }
+
+    function closeMessage() {
+        success.classList.remove('fadeIn');
+        successMessage.classList.remove('slideInDown');
+        success.classList.add('fadeOut');
+        successMessage.classList.add('slideOutUp');
+    }
+
+    openSuccessMsg();
+    successCloseBtn.addEventListener('click', closeMessage);
+    success.addEventListener('click', closeMessage);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && success.classList.contains('fadeIn')) {
+            closeMessage();
+        }
+    });
+}
+
 function init() {
     initMultipleSlider();
     initBrands();
     initSmoothScroll();
+    initSendForm();
     if(window.innerWidth < 1025) {
         initMobNavigation();
     }

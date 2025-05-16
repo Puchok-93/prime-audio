@@ -15,4 +15,8 @@
             <path d="M35 56v88h130V56H35zm64.879 58.87L49.15 64.499h101.455L99.879 114.87zM72.191 99.311l-28.755 30.025V70.757l28.755 28.554zm6.009 5.967l21.679 21.525 21.677-21.525 28.93 30.224H49.254L78.2 105.278zm49.364-5.967l29-28.796v59.092l-29-30.296z" fill="#02aeff" data-color="1"></path>
         </g>
     </symbol>
+    <symbol id="icon-cross" class="success__close-icon" viewBox="0 0 19 19">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 18.3848L0 1.41421L1.41421 0L18.3848 16.9706L16.9706 18.3848Z" fill="#000"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000140667 16.9707L16.9707 9.31025e-05L18.3849 1.41431L1.41435 18.3849L0.000140667 16.9707Z" fill="#000"></path>
+    </symbol>
 </svg>

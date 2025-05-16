@@ -51,7 +51,7 @@
         </div>
     </header>
     <main id="home">
-                <section class="about">
+        <section class="about">
             <div class="wrapper">
                 <h2 class="about__title title">Regional Audio Distribution</h2>
                 <p class="about__text">An audio distribution company with 15 years of unique expertise in High End and Hi-Fi audio, headphones, and Pro audio equipment.</p>
@@ -169,11 +169,11 @@
                     <form id="feedback-form" action="form.php" method="post">
                         <div class="contact-form-input-block">
                             <label for="user-first-name">First Name*</label>
-                            <input id="user-first-name" placeholder="Name*" ="text">
+                            <input id="user-first-name" placeholder="Name*" ="text" required>
                         </div>
                         <div class="contact-form-input-block">
                             <label for="user-email">Email*</label>
-                            <input id="user-email" placeholder="Email*" type="text">
+                            <input id="user-email" placeholder="Email*" type="text" required>
                         </div>
                         <div class="contact-form-input-block">
                             <label for="user-message">Message</label>
@@ -184,6 +184,16 @@
                 </div>
             </div>
         </section>
+        <div class="success">
+			<div class="success__message">
+				<button class="success__close-btn" type="button">
+                    <svg class="success__close-icon">
+                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                    </svg>
+				</button>
+				<h4 class="success__title">Your message has been sent</h4>
+			</div>
+		</div>
     </main>
     <footer class="footer">
         <div class="wrapper">
