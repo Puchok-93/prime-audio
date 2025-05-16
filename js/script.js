@@ -65,9 +65,9 @@ function initBrands() {
         `
     ;
 
-        function sortByField(fieldName){
-            return (a, b) => a[fieldName] > b[fieldName] ? 1 : -1;
-        }
+    function sortByField(fieldName){
+        return (a, b) => a[fieldName] > b[fieldName] ? 1 : -1;
+    }
 
     const render = () => {
         obBrandList.innerHTML = '';
@@ -76,7 +76,11 @@ function initBrands() {
         obBrandList.insertAdjacentHTML('beforeend', createBrandsString);
     }
 
-    render();
+    if(!obBrandList) {
+        return
+    } else {
+        render();
+    }
 }
 
 function initMobNavigation() {
@@ -118,6 +122,10 @@ function initSmoothScroll() {
 
 function initSendForm() {
     const form = document.getElementById('feedback-form');
+
+    if(!form) {
+        return
+    }
 
     async function sendForm(e) {
         e.preventDefault();
