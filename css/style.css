@@ -60,7 +60,8 @@ main {
     flex-direction: column;
     gap: 100px;
     background-color: #2f2e2e;
-    padding: 85px 0 0 0;
+    min-height: calc(100vh - 56px);
+    padding: 85px 0;
 }
 
 .wrapper {
@@ -679,6 +680,69 @@ button[type="submit"]:hover {
     }
 }
 
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: auto 0;
+}
+
+.contact-card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-card__avatar {
+    max-width: 200px;
+    height: auto;
+}
+
+.contact-card__name {
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-card__post {
+    font-size: 21px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-card__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.contact-card__social-link {
+    font-size: 21px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.contact-card__contact a {
+    color: #ffffff;
+}
+
+.contact-card__add {
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: #02aeff;
+    padding: 10px 20px 8px;
+}
+
 @media(max-width: 1160px) {
     .header-contacts {
         flex-direction: column;
@@ -920,5 +984,9 @@ button[type="submit"]:hover {
         100% {
             transform: translate3d(0, 0, 0);
         }
+    }
+
+    .contact-card {
+        gap: 30px;
     }
 }
