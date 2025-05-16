@@ -29,7 +29,7 @@ if ((float) $recaptcha->score >= 0.5) {
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 		$mail->setFrom($_ENV['SMTP_FROM_EMAIL'], 'primeaudio.ae');
-		$mail->addAddress('p.r.valentina@yandex.ru');
+		$mail->addAddress('contact@drhead.ae');
 		$mail->addBCC('p.cherkashin@doctorhead.ru');
 
 		$mail->CharSet = 'UTF-8';

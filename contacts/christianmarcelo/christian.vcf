@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Christian Marcelo
+N:Marcelo;Christian;;;
+item1.EMAIL;TYPE=INTERNET:c.marcelo@primeaudio.ae
+item1.X-ABLabel:
+item2.TEL:+971 50 5267066
+item2.X-ABLabel:
+item3.ORG:PrimeAudio
+item3.X-ABLabel:
+item4.TITLE:Retail Sales Assistant
+item4.X-ABLabel:
+PHOTO:https://lh3.googleusercontent.com/contacts/ADUEL1zZVQ3dq16L0jxtbt5goZ
+ 9TtANpguxPDcqD0D5fvknOS7XBzS9x
+CATEGORIES:myContacts
+END:VCARD

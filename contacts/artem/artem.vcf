@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Artem Poduruev
+N:Poduruev;Artem;;;
+item1.EMAIL;TYPE=INTERNET:artem@primeaudio.ae
+item1.X-ABLabel:
+item2.TEL:+971 56 363 9233
+item2.X-ABLabel:
+item3.ORG:Prime Audio
+item3.X-ABLabel:
+item4.TITLE:Founder
+item4.X-ABLabel:
+PHOTO:https://lh3.googleusercontent.com/contacts/AOq4LdbyzuMaesD5kk-W-j-vWk
+ q0hYggHZc8qfZ0Dqwj7H850lSAOOX8
+CATEGORIES:myContacts
+END:VCARD

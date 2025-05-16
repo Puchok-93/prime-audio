@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Asok Pariyar
+N:Pariyar;Asok;;;
+item1.EMAIL;TYPE=INTERNET:asok.pariyar@primeaudio.ae
+item1.X-ABLabel:
+item2.TEL:+971547575799
+item2.X-ABLabel:
+item3.ORG:Prime Audio
+item3.X-ABLabel:
+item4.TITLE:Product Manager
+item4.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD
