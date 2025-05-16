@@ -849,6 +849,10 @@ button[type="submit"]:hover {
         padding: 0 0 50px;
     }
 
+    .contact-info-block {
+        max-width: 100%;
+    }
+
     .contacts-content {
         flex-direction: column;
         gap: 40px;
