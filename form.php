@@ -34,7 +34,7 @@ if ((float) $recaptcha->score >= 0.5) {
 
 		$mail->CharSet = 'UTF-8';
 		$mail->isHTML(true);
-		$mail->Subject = 'Information from personal.audio';
+		$mail->Subject = 'Information from primeaudio.ae';
 		$mail->Body    = 'Имя: '.$_POST['user-name']."<br>".
 						 'E-mail: '.$_POST['user-email']."<br>".
 						 'Сообщение: '.$_POST['user-message']."<br>";
