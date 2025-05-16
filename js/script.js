@@ -137,7 +137,7 @@ function initSendForm() {
     document.getElementById('feedback-form').addEventListener('submit', function (evt) {
         evt.preventDefault();
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LcKzjQqAAAAADbar3tdu8jrNntDh7XhmTMzn_ap', {action: 'formsend'}).then(function (token) {
+            grecaptcha.execute('6LftHDsrAAAAAKhhXC9Xr8xs6pgIbMUcxkO44Vfq', {action: 'formsend'}).then(function (token) {
                 var el = document.createElement("input");
                 el.type = "hidden";
                 el.name = "token";

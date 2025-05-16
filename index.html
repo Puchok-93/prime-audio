@@ -168,16 +168,16 @@
                     <h3 class="contact-form__title">Feeback form</h3>
                     <form id="feedback-form" action="form.php" method="post">
                         <div class="contact-form-input-block">
-                            <label for="user-first-name">First Name*</label>
-                            <input id="user-first-name" placeholder="Name*" ="text" required>
+                            <label for="user-name">First Name*</label>
+                            <input id="user-name" name="user-name" placeholder="Name*" ="text" required>
                         </div>
                         <div class="contact-form-input-block">
                             <label for="user-email">Email*</label>
-                            <input id="user-email" placeholder="Email*" type="text" required>
+                            <input id="user-email" name="user-email" placeholder="Email*" type="text" required>
                         </div>
                         <div class="contact-form-input-block">
                             <label for="user-message">Message</label>
-                            <textarea id="user-message" placeholder="Your Message"></textarea>
+                            <textarea id="user-message" name="user-message" placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit">Send</button>
                     </form>
