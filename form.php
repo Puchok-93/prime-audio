@@ -28,7 +28,7 @@ if ((float) $recaptcha->score >= 0.5) {
 		$mail->Port = $_ENV['SMTP_PORT'];
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-		$mail->setFrom($_ENV['SMTP_FROM_EMAIL'], 'personal.audio');
+		$mail->setFrom($_ENV['SMTP_FROM_EMAIL'], 'primeaudio.ae');
 		$mail->addAddress('p.r.valentina@yandex.ru');
 		$mail->addBCC('p.cherkashin@doctorhead.ru');
 
